@@ -1,12 +1,11 @@
 'use strict';
 
 /* Controllers */
-
-
-function MyCtrl1() {}
-MyCtrl1.$inject = [];
-
-
-function MyCtrl2() {
+function Ipsum($scope, $http) {
+  $scope.ipsum = ""
+  $scope.getIpsum = function() {
+    $http.get("/app/ipsum/words.txt").success(function(data) {
+      $scope.ipsum = data.split("\n");
+    })
+  }
 }
-MyCtrl2.$inject = [];
