@@ -1,7 +1,7 @@
 'use strict';
 
 /* Controllers */
-function Ipsum($scope, $http) {
+function IpsumCtrl($scope, $http) {
   $scope.ipsum = ""
   $scope.getIpsum = function() {
     $http.get("/app/ipsum/words.txt").success(function(data) {

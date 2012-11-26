@@ -10,6 +10,7 @@ angular.module('myApp.filters', []).
     }
   }]).
   filter('truncate', [function() {
+    // "characters" are actually "quotes" now. need to rename.
     return function(data, characters) {
       return data.slice(0, characters);
     }
