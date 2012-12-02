@@ -1,6 +1,7 @@
 body {
-  background: #000 url(/app/img/space.jpg) no-repeat top center;
+  background: #000 url(/app/img/space-tile.jpg) repeat top center;
   color: #fff;
+  font-family: helvetica;
 }
 /* app css stylesheet */
 
