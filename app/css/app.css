@@ -1,11 +1,27 @@
+@import url(http://fonts.googleapis.com/css?family=Sanchez);
+
 body {
   background: #000 url(/app/img/space-tile.jpg) repeat top center;
   color: #fff;
-  font-family: helvetica;
 }
 /* app css stylesheet */
 
 .container {
- width: 80%;
- margin: 0 auto;
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: 'Sanchez', serif;
+  font-size: 3em;
+  margin: 0 auto;
+}
+
+textarea {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-family: 'Helvetica', arial, serif;
+  font-size: 1.4em;
+  padding: 20px;
 }
