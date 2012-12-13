@@ -1,36 +1,48 @@
 @import url(http://fonts.googleapis.com/css?family=Sanchez);
-
+/* line 4, ../sass/app.css.scss */
 body {
-  background: #000 url(/app/img/space-tile.jpg) repeat top center;
+  background: black url(/app/img/space-tile.jpg) repeat top center;
   color: #fff;
 }
-/* app css stylesheet */
 
+/* app css stylesheet */
+/* line 10, ../sass/app.css.scss */
 .container {
   width: 80%;
   margin: 0 auto;
 }
 
+/* line 15, ../sass/app.css.scss */
 .buttons {
   margin: 0 auto;
   padding: 20px 0;
   text-align: center;
 }
-
-button {
+/* line 19, ../sass/app.css.scss */
+.buttons button {
   padding: 20px;
   font-family: 'Sanchez', serif;
   font-size: 1em;
+  background-color: #000;
+  color: #fff;
+}
+/* line 25, ../sass/app.css.scss */
+.buttons button:disabled {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+  opacity: 0.4;
 }
 
+/* line 32, ../sass/app.css.scss */
 h1 {
   font-family: 'Sanchez', serif;
   font-size: 3em;
   margin: 0 auto;
   text-align: center;
   padding: 20px 0;
+  text-shadow: #f5f5f5 0 0 1.5em, #f5f5f5 1px -1px 0.4em;
 }
 
+/* line 41, ../sass/app.css.scss */
 textarea {
   background: transparent;
   border: none;

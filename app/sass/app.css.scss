@@ -1,0 +1,51 @@
+@import url(http://fonts.googleapis.com/css?family=Sanchez);
+@import "compass/css3";
+
+body {
+  background: #000 url(/app/img/space-tile.jpg) repeat top center;
+  color: #fff;
+}
+/* app css stylesheet */
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.buttons {
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: center;
+  button {
+    padding: 20px;
+    font-family: 'Sanchez', serif;
+    font-size: 1em;
+    background-color: #000;
+    color: #fff;
+    &:disabled {
+      @include opacity(.4);
+    }
+  }
+}
+
+
+h1 {
+  font-family: 'Sanchez', serif;
+  font-size: 3em;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0;
+  @include text-shadow(rgb(245, 245, 245) 0 0 1.5em, rgb(245, 245, 245) 1px -1px .4em);
+}
+
+textarea {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-family: 'Helvetica', arial, serif;
+  font-size: 1.4em;
+  line-height: 1.6em;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
