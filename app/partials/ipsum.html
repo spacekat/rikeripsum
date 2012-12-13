@@ -1,8 +1,10 @@
 <div class="container">
   <h1>RikerIpsum</h1>
 
-  <button type="submit" class="btn" ng-click="lessIpsum()" ng-disabled="tooFew()">- Less</button>
-  <button type="submit" class="btn" ng-click="addIpsum()">+ More</button>
+  <div class="buttons">
+    <button type="submit" class="btn" ng-click="lessIpsum()" ng-disabled="tooFew()">- Less</button>
+    <button type="submit" class="btn" ng-click="addIpsum()">+ More</button>
+  </div>
 
   <div>
     <textarea rows="10" cols="50" onclick="this.focus();this.select()" readonly="readonly">{{ ipsum | truncate:quoteCount | join }}</textarea>

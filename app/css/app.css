@@ -11,10 +11,24 @@ body {
   margin: 0 auto;
 }
 
+.buttons {
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: center;
+}
+
+button {
+  padding: 20px;
+  font-family: 'Sanchez', serif;
+  font-size: 1em;
+}
+
 h1 {
   font-family: 'Sanchez', serif;
   font-size: 3em;
   margin: 0 auto;
+  text-align: center;
+  padding: 20px 0;
 }
 
 textarea {
@@ -23,5 +37,8 @@ textarea {
   color: #fff;
   font-family: 'Helvetica', arial, serif;
   font-size: 1.4em;
-  padding: 20px;
+  line-height: 1.6em;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
