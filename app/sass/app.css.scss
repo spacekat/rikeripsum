@@ -17,17 +17,22 @@ body {
   padding: 20px 0;
   text-align: center;
   button {
-    padding: 15px 20px;
+    padding: 15px 60px;
     margin: 0 10px;
-    border-top: 2px solid rgb(66, 66, 18);
-    border-bottom: 2px solid #000;
-    border-left: 2px solid #000;
-    border-right: 2px solid rgb(25, 37, 9);
-    @include box-shadow(rgba(#696923, 0.7) 0 0 8px, rgba(#000, 0.4) 0 0 5px, rgba(#000, 0.6) 0 -1.4em 6px 4px inset);
+    border-top: 1px solid rgb(66, 66, 18);
+    border-bottom: 1px solid rgb(25, 37, 9);
+    border-left: 1px solid rgb(25, 37, 9);
+    border-right: 1px solid rgb(25, 37, 9);
+    @include box-shadow(rgb(66, 66, 18) 0 -1px 3px, #000 0 0 5px, rgba(#000, 0.4) 0 0 5px, rgba(#000, 0.6) 0 -1.4em 6px 4px inset);
     font-size: 1em;
-    background-color: rgb(28, 34, 23);
+    background-color: rgba(28, 34, 23, .8);
     color: rgb(143, 153, 25);
-    @include border-radius(10px);
+    @include text-shadow(#000 0 -1px 2px);
+    @include border-radius(18px);
+    &:hover {
+      background-color: rgb(17, 22, 14);
+      @include box-shadow(rgb(66, 66, 18) 0 -1px 3px, #000 0 0 5px, rgba(#000, 0.4) 0 0 5px, rgba(#000, 0.6) 0 1.4em 6px 4px inset);
+    }
     &:disabled {
       @include opacity(.4);
     }
@@ -45,6 +50,7 @@ h1 {
 }
 
 #copy {
+  display: inline-block;
   cursor: crosshair;
   background: transparent;
   border: none;

@@ -20,31 +20,39 @@ body {
 }
 /* line 19, ../sass/app.css.scss */
 .buttons button {
-  padding: 15px 20px;
+  padding: 15px 60px;
   margin: 0 10px;
-  border-top: 2px solid #424212;
-  border-bottom: 2px solid #000;
-  border-left: 2px solid #000;
-  border-right: 2px solid #192509;
-  -webkit-box-shadow: rgba(105, 105, 35, 0.7) 0 0 8px, rgba(0, 0, 0, 0.4) 0 0 5px, rgba(0, 0, 0, 0.6) 0 -1.4em 6px 4px inset;
-  -moz-box-shadow: rgba(105, 105, 35, 0.7) 0 0 8px, rgba(0, 0, 0, 0.4) 0 0 5px, rgba(0, 0, 0, 0.6) 0 -1.4em 6px 4px inset;
-  box-shadow: rgba(105, 105, 35, 0.7) 0 0 8px, rgba(0, 0, 0, 0.4) 0 0 5px, rgba(0, 0, 0, 0.6) 0 -1.4em 6px 4px inset;
+  border-top: 1px solid #424212;
+  border-bottom: 1px solid #192509;
+  border-left: 1px solid #192509;
+  border-right: 1px solid #192509;
+  -webkit-box-shadow: #424212 0 -1px 3px, black 0 0 5px, rgba(0, 0, 0, 0.4) 0 0 5px, rgba(0, 0, 0, 0.6) 0 -1.4em 6px 4px inset;
+  -moz-box-shadow: #424212 0 -1px 3px, black 0 0 5px, rgba(0, 0, 0, 0.4) 0 0 5px, rgba(0, 0, 0, 0.6) 0 -1.4em 6px 4px inset;
+  box-shadow: #424212 0 -1px 3px, black 0 0 5px, rgba(0, 0, 0, 0.4) 0 0 5px, rgba(0, 0, 0, 0.6) 0 -1.4em 6px 4px inset;
   font-size: 1em;
-  background-color: #1c2217;
+  background-color: rgba(28, 34, 23, 0.8);
   color: #8f9919;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  border-radius: 10px;
+  text-shadow: black 0 -1px 2px;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  -ms-border-radius: 18px;
+  -o-border-radius: 18px;
+  border-radius: 18px;
 }
-/* line 31, ../sass/app.css.scss */
+/* line 32, ../sass/app.css.scss */
+.buttons button:hover {
+  background-color: #11160e;
+  -webkit-box-shadow: #424212 0 -1px 3px, black 0 0 5px, rgba(0, 0, 0, 0.4) 0 0 5px, rgba(0, 0, 0, 0.6) 0 1.4em 6px 4px inset;
+  -moz-box-shadow: #424212 0 -1px 3px, black 0 0 5px, rgba(0, 0, 0, 0.4) 0 0 5px, rgba(0, 0, 0, 0.6) 0 1.4em 6px 4px inset;
+  box-shadow: #424212 0 -1px 3px, black 0 0 5px, rgba(0, 0, 0, 0.4) 0 0 5px, rgba(0, 0, 0, 0.6) 0 1.4em 6px 4px inset;
+}
+/* line 36, ../sass/app.css.scss */
 .buttons button:disabled {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
   opacity: 0.4;
 }
 
-/* line 38, ../sass/app.css.scss */
+/* line 43, ../sass/app.css.scss */
 h1 {
   font-family: 'Sanchez', serif;
   font-size: 3em;
@@ -54,8 +62,9 @@ h1 {
   text-shadow: #f5f5f5 0 0 1.5em, #e1d772 1px -1px 0.4em;
 }
 
-/* line 47, ../sass/app.css.scss */
+/* line 52, ../sass/app.css.scss */
 #copy {
+  display: inline-block;
   cursor: crosshair;
   background: transparent;
   border: none;
