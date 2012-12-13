@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Sanchez);
+@import url(http://fonts.googleapis.com/css?family=Cantarell:700italic);
 /* line 4, ../sass/app.css.scss */
 body {
   background: black url(/app/img/space-tile.jpg) repeat top center;
@@ -45,24 +45,27 @@ body {
   -webkit-box-shadow: #424212 0 -1px 3px, black 0 0 5px, rgba(0, 0, 0, 0.4) 0 0 5px, rgba(0, 0, 0, 0.6) 0 1.4em 6px 4px inset;
   -moz-box-shadow: #424212 0 -1px 3px, black 0 0 5px, rgba(0, 0, 0, 0.4) 0 0 5px, rgba(0, 0, 0, 0.6) 0 1.4em 6px 4px inset;
   box-shadow: #424212 0 -1px 3px, black 0 0 5px, rgba(0, 0, 0, 0.4) 0 0 5px, rgba(0, 0, 0, 0.6) 0 1.4em 6px 4px inset;
+  cursor: pointer;
 }
-/* line 36, ../sass/app.css.scss */
+/* line 37, ../sass/app.css.scss */
 .buttons button:disabled {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
   opacity: 0.4;
 }
 
-/* line 43, ../sass/app.css.scss */
+/* line 44, ../sass/app.css.scss */
 h1 {
-  font-family: 'Sanchez', serif;
-  font-size: 3em;
+  font-family: 'Cantarell', sans-serif;
+  font-style: italic;
+  letter-spacing: -0.1em;
+  font-size: 4em;
   margin: 0 auto;
   text-align: center;
   padding: 20px 0;
   text-shadow: #f5f5f5 0 0 1.5em, #e1d772 1px -1px 0.4em;
 }
 
-/* line 52, ../sass/app.css.scss */
+/* line 55, ../sass/app.css.scss */
 #copy {
   display: inline-block;
   cursor: crosshair;

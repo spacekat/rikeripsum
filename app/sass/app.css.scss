@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Sanchez);
+@import url(http://fonts.googleapis.com/css?family=Cantarell:700italic);
 @import "compass/css3";
 
 body {
@@ -32,6 +32,7 @@ body {
     &:hover {
       background-color: rgb(17, 22, 14);
       @include box-shadow(rgb(66, 66, 18) 0 -1px 3px, #000 0 0 5px, rgba(#000, 0.4) 0 0 5px, rgba(#000, 0.6) 0 1.4em 6px 4px inset);
+      cursor: pointer;
     }
     &:disabled {
       @include opacity(.4);
@@ -41,8 +42,10 @@ body {
 
 
 h1 {
-  font-family: 'Sanchez', serif;
-  font-size: 3em;
+  font-family: 'Cantarell', sans-serif;
+  font-style: italic;
+  letter-spacing: -0.1em;
+  font-size: 4em;
   margin: 0 auto;
   text-align: center;
   padding: 20px 0;
