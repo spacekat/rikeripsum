@@ -17,11 +17,17 @@ body {
   padding: 20px 0;
   text-align: center;
   button {
-    padding: 20px;
-    font-family: 'Sanchez', serif;
+    padding: 15px 20px;
+    margin: 0 10px;
+    border-top: 2px solid rgb(66, 66, 18);
+    border-bottom: 2px solid #000;
+    border-left: 2px solid #000;
+    border-right: 2px solid rgb(25, 37, 9);
+    @include box-shadow(rgba(#696923, 0.7) 0 0 8px, rgba(#000, 0.4) 0 0 5px, rgba(#000, 0.6) 0 -1.4em 6px 4px inset);
     font-size: 1em;
-    background-color: #000;
-    color: #fff;
+    background-color: rgb(28, 34, 23);
+    color: rgb(143, 153, 25);
+    @include border-radius(10px);
     &:disabled {
       @include opacity(.4);
     }
@@ -35,7 +41,7 @@ h1 {
   margin: 0 auto;
   text-align: center;
   padding: 20px 0;
-  @include text-shadow(rgb(245, 245, 245) 0 0 1.5em, rgb(245, 245, 245) 1px -1px .4em);
+  @include text-shadow(rgb(245, 245, 245) 0 0 1.5em, #E1D772 1px -1px .4em);
 }
 
 textarea {
@@ -45,7 +51,6 @@ textarea {
   font-family: 'Helvetica', arial, serif;
   font-size: 1.4em;
   line-height: 1.6em;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  height: 100%;
 }

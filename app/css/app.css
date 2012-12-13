@@ -20,29 +20,41 @@ body {
 }
 /* line 19, ../sass/app.css.scss */
 .buttons button {
-  padding: 20px;
-  font-family: 'Sanchez', serif;
+  padding: 15px 20px;
+  margin: 0 10px;
+  border-top: 2px solid #424212;
+  border-bottom: 2px solid #000;
+  border-left: 2px solid #000;
+  border-right: 2px solid #192509;
+  -webkit-box-shadow: rgba(105, 105, 35, 0.7) 0 0 8px, rgba(0, 0, 0, 0.4) 0 0 5px, rgba(0, 0, 0, 0.6) 0 -1.4em 6px 4px inset;
+  -moz-box-shadow: rgba(105, 105, 35, 0.7) 0 0 8px, rgba(0, 0, 0, 0.4) 0 0 5px, rgba(0, 0, 0, 0.6) 0 -1.4em 6px 4px inset;
+  box-shadow: rgba(105, 105, 35, 0.7) 0 0 8px, rgba(0, 0, 0, 0.4) 0 0 5px, rgba(0, 0, 0, 0.6) 0 -1.4em 6px 4px inset;
   font-size: 1em;
-  background-color: #000;
-  color: #fff;
+  background-color: #1c2217;
+  color: #8f9919;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
 }
-/* line 25, ../sass/app.css.scss */
+/* line 31, ../sass/app.css.scss */
 .buttons button:disabled {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
   opacity: 0.4;
 }
 
-/* line 32, ../sass/app.css.scss */
+/* line 38, ../sass/app.css.scss */
 h1 {
   font-family: 'Sanchez', serif;
   font-size: 3em;
   margin: 0 auto;
   text-align: center;
   padding: 20px 0;
-  text-shadow: #f5f5f5 0 0 1.5em, #f5f5f5 1px -1px 0.4em;
+  text-shadow: #f5f5f5 0 0 1.5em, #e1d772 1px -1px 0.4em;
 }
 
-/* line 41, ../sass/app.css.scss */
+/* line 47, ../sass/app.css.scss */
 textarea {
   background: transparent;
   border: none;
@@ -50,7 +62,6 @@ textarea {
   font-family: 'Helvetica', arial, serif;
   font-size: 1.4em;
   line-height: 1.6em;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  height: 100%;
 }
