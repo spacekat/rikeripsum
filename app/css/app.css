@@ -55,13 +55,12 @@ h1 {
 }
 
 /* line 47, ../sass/app.css.scss */
-textarea {
+#copy {
+  cursor: crosshair;
   background: transparent;
   border: none;
   color: #fff;
   font-family: 'Helvetica', arial, serif;
   font-size: 1.4em;
   line-height: 1.6em;
-  margin: 0 auto;
-  padding: 0;
 }

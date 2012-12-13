@@ -6,7 +6,5 @@
     <button type="submit" class="btn" ng-click="addIpsum()">More</button>
   </div>
 
-  <div>
-    <textarea onclick="this.focus();this.select()" readonly="readonly">{{ ipsum | truncate:quoteCount | join }}</textarea>
-  </div>
+  <div id="copy" onclick="selectText('copy')" readonly="readonly">{{ ipsum | truncate:quoteCount | join }}</div>
 </div>
