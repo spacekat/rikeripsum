@@ -13,26 +13,60 @@ body {
 }
 
 .buttons {
-  margin: 0 auto;
-  padding: 20px 0;
-  text-align: center;
   button {
-    padding: 15px 60px;
-    margin: 0 10px;
+    // LESS button
+    &:first-child {
+      @include border-left-radius(18px);
+      padding-left: 20px;
+      padding-right: 30px;
+      .icon-left {
+        float: left;
+        font-weight: bold;
+      }
+    }
+    // MORE button
+    &:last-child {
+      @include border-right-radius(18px);
+      padding-right: 20px;
+      padding-left: 30px;
+      .icon-right {
+        float: right;
+        font-weight: bold;
+      }
+    }
+    // common button style
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 50%;
+    float:left;
+    margin: 0;
     border-top: 1px solid rgb(66, 66, 18);
     border-bottom: 1px solid rgb(25, 37, 9);
-    border-left: 1px solid rgb(25, 37, 9);
     border-right: 1px solid rgb(25, 37, 9);
-    @include box-shadow(rgb(66, 66, 18) 0 -1px 3px, #000 0 0 5px, rgba(#000, 0.4) 0 0 5px, rgba(#000, 0.6) 0 -1.4em 6px 4px inset);
-    font-size: 1em;
-    background-color: rgba(28, 34, 23, .8);
+    border-left: 1px solid rgb(25, 37, 9);
+    // button glows
+    // 1. top yellow highlight
+    // 2. inside shading (inset)
+    @include box-shadow(#424212 0 -1px 3px, rgba(0, 0, 0, 0.14) 0 -.4em 8px 5px inset);
+    background-color: rgba(31, 34, 0, 0.94);
+    // text
+    font-size: 1.3em;
+    line-height: 1.3em;
     color: rgb(143, 153, 25);
-    @include text-shadow(#000 0 -1px 2px);
-    @include border-radius(18px);
+    @include text-shadow(#000 0 -1px 2px, rgb(66, 66, 18) 0 1px 1px);
     &:hover {
-      background-color: rgb(17, 22, 14);
-      @include box-shadow(rgb(66, 66, 18) 0 -1px 3px, #000 0 0 5px, rgba(#000, 0.4) 0 0 5px, rgba(#000, 0.6) 0 1.4em 6px 4px inset);
+      background-color: rgba(44, 48, 1, 0.94);
+      @include box-shadow(#424212 0 -1px 3px, rgba(0, 0, 0, 0.14) 0 -.4em 8px 5px inset);
       cursor: pointer;
+    }
+    &:active {
+      padding-top: 16px;
+      padding-bottom: 14px;
+      background-color: rgba(44, 48, 1, 0.94);
+      @include box-shadow(#424212 0 -1px 3px, rgba(0, 0, 0, 0.14) 0 .4em 8px 5px inset);
+      cursor: pointer;
+      border-top: 1px solid rgb(25, 37, 9);
+      border-bottom: 1px solid rgb(66, 66, 18);
     }
     &:disabled {
       @include opacity(.4);
@@ -53,6 +87,7 @@ h1 {
 }
 
 #copy {
+  padding: 40px 0 20px;
   display: inline-block;
   cursor: crosshair;
   background: transparent;

@@ -12,48 +12,85 @@ body {
   margin: 0 auto;
 }
 
-/* line 15, ../sass/app.css.scss */
-.buttons {
-  margin: 0 auto;
-  padding: 20px 0;
-  text-align: center;
-}
-/* line 19, ../sass/app.css.scss */
+/* line 16, ../sass/app.css.scss */
 .buttons button {
-  padding: 15px 60px;
-  margin: 0 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 50%;
+  float: left;
+  margin: 0;
   border-top: 1px solid #424212;
   border-bottom: 1px solid #192509;
-  border-left: 1px solid #192509;
   border-right: 1px solid #192509;
-  -webkit-box-shadow: #424212 0 -1px 3px, black 0 0 5px, rgba(0, 0, 0, 0.4) 0 0 5px, rgba(0, 0, 0, 0.6) 0 -1.4em 6px 4px inset;
-  -moz-box-shadow: #424212 0 -1px 3px, black 0 0 5px, rgba(0, 0, 0, 0.4) 0 0 5px, rgba(0, 0, 0, 0.6) 0 -1.4em 6px 4px inset;
-  box-shadow: #424212 0 -1px 3px, black 0 0 5px, rgba(0, 0, 0, 0.4) 0 0 5px, rgba(0, 0, 0, 0.6) 0 -1.4em 6px 4px inset;
-  font-size: 1em;
-  background-color: rgba(28, 34, 23, 0.8);
+  border-left: 1px solid #192509;
+  -webkit-box-shadow: #424212 0 -1px 3px, rgba(0, 0, 0, 0.14) 0 -0.4em 8px 5px inset;
+  -moz-box-shadow: #424212 0 -1px 3px, rgba(0, 0, 0, 0.14) 0 -0.4em 8px 5px inset;
+  box-shadow: #424212 0 -1px 3px, rgba(0, 0, 0, 0.14) 0 -0.4em 8px 5px inset;
+  background-color: rgba(31, 34, 0, 0.94);
+  font-size: 1.3em;
+  line-height: 1.3em;
   color: #8f9919;
-  text-shadow: black 0 -1px 2px;
-  -webkit-border-radius: 18px;
-  -moz-border-radius: 18px;
-  -ms-border-radius: 18px;
-  -o-border-radius: 18px;
-  border-radius: 18px;
+  text-shadow: black 0 -1px 2px, #424212 0 1px 1px;
+}
+/* line 18, ../sass/app.css.scss */
+.buttons button:first-child {
+  -moz-border-radius-topleft: 18px;
+  -webkit-border-top-left-radius: 18px;
+  border-top-left-radius: 18px;
+  -moz-border-radius-bottomleft: 18px;
+  -webkit-border-bottom-left-radius: 18px;
+  border-bottom-left-radius: 18px;
+  padding-left: 20px;
+  padding-right: 30px;
+}
+/* line 22, ../sass/app.css.scss */
+.buttons button:first-child .icon-left {
+  float: left;
+  font-weight: bold;
+}
+/* line 28, ../sass/app.css.scss */
+.buttons button:last-child {
+  -moz-border-radius-topright: 18px;
+  -webkit-border-top-right-radius: 18px;
+  border-top-right-radius: 18px;
+  -moz-border-radius-bottomright: 18px;
+  -webkit-border-bottom-right-radius: 18px;
+  border-bottom-right-radius: 18px;
+  padding-right: 20px;
+  padding-left: 30px;
 }
 /* line 32, ../sass/app.css.scss */
+.buttons button:last-child .icon-right {
+  float: right;
+  font-weight: bold;
+}
+/* line 57, ../sass/app.css.scss */
 .buttons button:hover {
-  background-color: #11160e;
-  -webkit-box-shadow: #424212 0 -1px 3px, black 0 0 5px, rgba(0, 0, 0, 0.4) 0 0 5px, rgba(0, 0, 0, 0.6) 0 1.4em 6px 4px inset;
-  -moz-box-shadow: #424212 0 -1px 3px, black 0 0 5px, rgba(0, 0, 0, 0.4) 0 0 5px, rgba(0, 0, 0, 0.6) 0 1.4em 6px 4px inset;
-  box-shadow: #424212 0 -1px 3px, black 0 0 5px, rgba(0, 0, 0, 0.4) 0 0 5px, rgba(0, 0, 0, 0.6) 0 1.4em 6px 4px inset;
+  background-color: rgba(44, 48, 1, 0.94);
+  -webkit-box-shadow: #424212 0 -1px 3px, rgba(0, 0, 0, 0.14) 0 -0.4em 8px 5px inset;
+  -moz-box-shadow: #424212 0 -1px 3px, rgba(0, 0, 0, 0.14) 0 -0.4em 8px 5px inset;
+  box-shadow: #424212 0 -1px 3px, rgba(0, 0, 0, 0.14) 0 -0.4em 8px 5px inset;
   cursor: pointer;
 }
-/* line 37, ../sass/app.css.scss */
+/* line 62, ../sass/app.css.scss */
+.buttons button:active {
+  padding-top: 16px;
+  padding-bottom: 14px;
+  background-color: rgba(44, 48, 1, 0.94);
+  -webkit-box-shadow: #424212 0 -1px 3px, rgba(0, 0, 0, 0.14) 0 0.4em 8px 5px inset;
+  -moz-box-shadow: #424212 0 -1px 3px, rgba(0, 0, 0, 0.14) 0 0.4em 8px 5px inset;
+  box-shadow: #424212 0 -1px 3px, rgba(0, 0, 0, 0.14) 0 0.4em 8px 5px inset;
+  cursor: pointer;
+  border-top: 1px solid #192509;
+  border-bottom: 1px solid #424212;
+}
+/* line 71, ../sass/app.css.scss */
 .buttons button:disabled {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
   opacity: 0.4;
 }
 
-/* line 44, ../sass/app.css.scss */
+/* line 78, ../sass/app.css.scss */
 h1 {
   font-family: 'Cantarell', sans-serif;
   font-style: italic;
@@ -65,8 +102,9 @@ h1 {
   text-shadow: #f5f5f5 0 0 1.5em, #e1d772 1px -1px 0.4em;
 }
 
-/* line 55, ../sass/app.css.scss */
+/* line 89, ../sass/app.css.scss */
 #copy {
+  padding: 40px 0 20px;
   display: inline-block;
   cursor: crosshair;
   background: transparent;

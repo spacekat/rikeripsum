@@ -2,8 +2,14 @@
   <h1>RIKER IPSUM</h1>
 
   <div class="buttons">
-    <button type="submit" class="btn" ng-click="lessIpsum()" ng-disabled="tooFew()">less</button>
-    <button type="submit" class="btn" ng-click="addIpsum()">more</button>
+    <button type="submit" class="btn" ng-click="lessIpsum()" ng-disabled="tooFew()">
+      <span class="icon-left">-</span>
+      less
+    </button>
+    <button type="submit" class="btn" ng-click="addIpsum()">
+      <span class="icon-right">+</span>
+      more
+    </button>
   </div>
 
   <div id="copy" onclick="selectText('copy')" readonly="readonly">{{ ipsum | truncate:quoteCount | join }}</div>
