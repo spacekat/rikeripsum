@@ -1,26 +1,14 @@
 <div class="header">
-  <div class="container">
-    <h1 class="galaxy">RIKER IPSUM</h1>
-    <div class="buttons">
-      <button type="submit" class="btn" ng-click="lessIpsum()" ng-disabled="tooFew()">
-        <span class="icon-left">-</span>
-        less
-      </button>
-      <button type="submit" class="btn" ng-click="addIpsum()">
-        <span class="icon-right">+</span>
-        more
-      </button>
-    </div>
+  <h1 class="galaxy">RIKER IPSUM</h1>
+  <div class="buttons">
+    <button type="submit" class="btn" ng-click="lessIpsum()" ng-disabled="tooFew()">
+      <span class="icon-left">-</span>
+      less
+    </button>
+    <button type="submit" class="btn" ng-click="addIpsum()">
+      <span class="icon-right">+</span>
+      more
+    </button>
   </div>
 </div>
-<div class="container">
-  <div id="copy" onclick="selectText('copy')" readonly="readonly">{{ ipsum | truncate:quoteCount | join }}</div>
-</div>
-<div class="footer">
-  <div class="container">
-    <p>Background <a href="http://hubblesite.org/gallery/album/entire/pr2012010c/">Galaxy Cluster Abel</a> from the Hubble.</p>
-    <p>
-      Image credit: NASA, ESA, CFHT, CXO, M.J. Jee (University of California, Davis), and A. Mahdavi (San Francisco State University)
-    </p>
-  </div>
-</div>
+<div id="copy" onclick="selectText('copy')" readonly="readonly">{{ ipsum | truncate:quoteCount | join }}</div>

@@ -3,19 +3,12 @@
 @import "compass/utilities/general/clearfix";
 
 // Colors
-
-$white: #fff;
 $blueLight: #fff;
 $blue: #E1EFEF;
 $blueDark: #BFDDDC;
 $blueDarkest: #87A09F;
-$grey: #D1C9C9;
 $greyDark: #505456;
-
-$peach: #d88468;
-$bluesky: #2f96e3;
 $teal: #29abb9;
-$purple: #413291;
 
 body {
   background: #fff;
@@ -24,8 +17,53 @@ body {
   font-family: 'Helvetica', arial, serif;
 }
 
+// Required for sticky footer
+* { margin:0; padding:0; }
+
+html, body {height: 100%;}
+
+#wrap {min-height: 100%;}
+
+#main {
+  overflow: auto;
+  padding-bottom: 111px;/* must be same height as the footer */
+  margin: 0 auto;
+  width: 90%;
+}
+
+/*Opera Fix*/
+body:before {
+  content:"";
+  height:100%;
+  float:left;
+  width:0;
+  margin-top:-32767px;
+}
+// end sticky footer
+
+#footer {
+  position: relative;
+  margin-top: -111px; /* negative value of footer height */
+  height: 111px;
+  clear:both;
+  background-color: $blue;
+  p {
+    font-size: .8em;
+    color: $blueDarkest;
+    text-align: center;
+    line-height: 1.6em;
+    &:first-of-type {
+      padding-top: 20px;
+      padding-bottom: 10px;
+      color: darken($blueDarkest, 10);
+    }
+    a {
+      color: $teal;
+    }
+  }
+}
+
 .header {
-  @include clearfix;
   h1 {
     font-family: 'Krona One', sans-serif;
     /* fallback color */
@@ -56,7 +94,7 @@ body {
   border: 1px solid $blueDark;
   @include border-radius(12px);
   display: inline-block;
-  width: 100%;
+  width: 98%;
   &:after {
     clear: both;
   }
@@ -121,33 +159,14 @@ body {
   }
 }
 
-.container {
-  width: 80%;
-  margin: 0 auto;
-}
-
+// Contains the Ipsum result
 #copy {
   padding: 5px;
   margin: 40px 0 80px;
-  display: inline-block;
   cursor: crosshair;
   background: transparent;
   border: none;
   color: $greyDark;
   font-size: 1.2em;
   line-height: 1.8em;
-}
-.footer {
-  position: absolute;
-  bottom: 0;
-  min-height: 80px;
-  width: 100%;
-  p {
-    font-size: .8em;
-    color: $blueDarkest;
-    text-align: center;
-    a {
-      color: $teal;
-    }
-  }
 }

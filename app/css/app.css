@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Krona+One);
-/* line 20, ../sass/app.css.scss */
+/* line 13, ../sass/app.css.scss */
 body {
   background: #fff;
   margin: 0;
@@ -7,12 +7,69 @@ body {
   font-family: 'Helvetica', arial, serif;
 }
 
-/* line 27, ../sass/app.css.scss */
-.header {
-  overflow: hidden;
-  *zoom: 1;
+/* line 21, ../sass/app.css.scss */
+* {
+  margin: 0;
+  padding: 0;
 }
-/* line 29, ../sass/app.css.scss */
+
+/* line 23, ../sass/app.css.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 25, ../sass/app.css.scss */
+#wrap {
+  min-height: 100%;
+}
+
+/* line 27, ../sass/app.css.scss */
+#main {
+  overflow: auto;
+  padding-bottom: 111px;
+  /* must be same height as the footer */
+  margin: 0 auto;
+  width: 90%;
+}
+
+/*Opera Fix*/
+/* line 35, ../sass/app.css.scss */
+body:before {
+  content: "";
+  height: 100%;
+  float: left;
+  width: 0;
+  margin-top: -32767px;
+}
+
+/* line 44, ../sass/app.css.scss */
+#footer {
+  position: relative;
+  margin-top: -111px;
+  /* negative value of footer height */
+  height: 111px;
+  clear: both;
+  background-color: #e1efef;
+}
+/* line 50, ../sass/app.css.scss */
+#footer p {
+  font-size: .8em;
+  color: #87a09f;
+  text-align: center;
+  line-height: 1.6em;
+}
+/* line 55, ../sass/app.css.scss */
+#footer p:first-of-type {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  color: #6c8887;
+}
+/* line 60, ../sass/app.css.scss */
+#footer p a {
+  color: #29abb9;
+}
+
+/* line 67, ../sass/app.css.scss */
 .header h1 {
   font-family: 'Krona One', sans-serif;
   /* fallback color */
@@ -24,7 +81,7 @@ body {
   text-align: center;
   padding: 0px 0;
 }
-/* line 40, ../sass/app.css.scss */
+/* line 78, ../sass/app.css.scss */
 .header h1.galaxy {
   /* Fill with galaxy art (in WebKit, only) */
   /* overrides color with nothingness */
@@ -35,7 +92,7 @@ body {
   -webkit-background-clip: text;
 }
 
-/* line 54, ../sass/app.css.scss */
+/* line 92, ../sass/app.css.scss */
 .buttons {
   margin: 10px 0;
   border: 1px solid #bfdddc;
@@ -45,13 +102,13 @@ body {
   -o-border-radius: 12px;
   border-radius: 12px;
   display: inline-block;
-  width: 100%;
+  width: 98%;
 }
-/* line 60, ../sass/app.css.scss */
+/* line 98, ../sass/app.css.scss */
 .buttons:after {
   clear: both;
 }
-/* line 63, ../sass/app.css.scss */
+/* line 101, ../sass/app.css.scss */
 .buttons button {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -72,7 +129,7 @@ body {
   color: #87a09f;
   text-shadow: #bfdddc 0 -1px 2px, white 0 1px 1px;
 }
-/* line 65, ../sass/app.css.scss */
+/* line 103, ../sass/app.css.scss */
 .buttons button:first-child {
   -moz-border-radius-topleft: 10px;
   -webkit-border-top-left-radius: 10px;
@@ -84,13 +141,13 @@ body {
   padding-right: 30px;
   text-align: right;
 }
-/* line 70, ../sass/app.css.scss */
+/* line 108, ../sass/app.css.scss */
 .buttons button:first-child .icon-left {
   float: left;
   font-weight: bold;
   font-size: 1.4em;
 }
-/* line 77, ../sass/app.css.scss */
+/* line 115, ../sass/app.css.scss */
 .buttons button:last-child {
   -moz-border-radius-topright: 10px;
   -webkit-border-top-right-radius: 10px;
@@ -102,13 +159,13 @@ body {
   padding-left: 30px;
   text-align: left;
 }
-/* line 82, ../sass/app.css.scss */
+/* line 120, ../sass/app.css.scss */
 .buttons button:last-child .icon-right {
   float: right;
   font-weight: bold;
   font-size: 1.4em;
 }
-/* line 104, ../sass/app.css.scss */
+/* line 142, ../sass/app.css.scss */
 .buttons button:hover {
   color: #b8d9d8;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(4%, #e8f3f3), color-stop(100%, #e8f3f3));
@@ -118,7 +175,7 @@ body {
   background-image: linear-gradient(#ffffff, #e8f3f3 4%, #e8f3f3);
   cursor: pointer;
 }
-/* line 109, ../sass/app.css.scss */
+/* line 147, ../sass/app.css.scss */
 .buttons button:active {
   padding-top: 16px;
   padding-bottom: 14px;
@@ -131,46 +188,21 @@ body {
   background-image: -o-linear-gradient(#e8f3f3 4%, #e8f3f3);
   background-image: linear-gradient(#e8f3f3 4%, #e8f3f3);
 }
-/* line 117, ../sass/app.css.scss */
+/* line 155, ../sass/app.css.scss */
 .buttons button:disabled {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
   opacity: 0.3;
   cursor: not-allowed;
 }
 
-/* line 124, ../sass/app.css.scss */
-.container {
-  width: 80%;
-  margin: 0 auto;
-}
-
-/* line 129, ../sass/app.css.scss */
+/* line 163, ../sass/app.css.scss */
 #copy {
   padding: 5px;
   margin: 40px 0 80px;
-  display: inline-block;
   cursor: crosshair;
   background: transparent;
   border: none;
   color: #505456;
   font-size: 1.2em;
   line-height: 1.8em;
-}
-
-/* line 140, ../sass/app.css.scss */
-.footer {
-  position: absolute;
-  bottom: 0;
-  min-height: 80px;
-  width: 100%;
-}
-/* line 145, ../sass/app.css.scss */
-.footer p {
-  font-size: .8em;
-  color: #87a09f;
-  text-align: center;
-}
-/* line 149, ../sass/app.css.scss */
-.footer p a {
-  color: #29abb9;
 }
