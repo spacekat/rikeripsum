@@ -1,37 +1,88 @@
-@import url(http://fonts.googleapis.com/css?family=Cantarell:700italic);
+@import url(http://fonts.googleapis.com/css?family=Krona+One);
 @import "compass/css3";
+@import "compass/utilities/general/clearfix";
+
+// Colors
+
+$white: #fff;
+$blueLight: #fff;
+$blue: #E1EFEF;
+$blueDark: #BFDDDC;
+$blueDarkest: #87A09F;
+$grey: #D1C9C9;
+$greyDark: #505456;
+
+$peach: #d88468;
+$bluesky: #2f96e3;
+$teal: #29abb9;
+$purple: #413291;
 
 body {
-  background: #000 url(/app/img/space-tile.jpg) repeat top center;
-  color: #fff;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica', arial, serif;
 }
-/* app css stylesheet */
 
-.container {
-  width: 80%;
-  margin: 0 auto;
+.header {
+  @include clearfix;
+  h1 {
+    font-family: 'Krona One', sans-serif;
+    /* fallback color */
+    color: $blueDarkest;
+    font-style: italic;
+    letter-spacing: -0.1em;
+    font-size: 7em;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0px 0;
+
+    &.galaxy {
+      /* Fill with galaxy art (in WebKit, only) */
+      /* overrides color with nothingness */
+      -webkit-text-fill-color: transparent;
+
+      /* remember non WebKit browsers will see all of this EXCEPT the text */
+      background: #000 url(/app/img/space-tile.jpg) repeat top center;
+
+      /* the magic */
+      -webkit-background-clip: text;
+    }
+  }
 }
 
 .buttons {
+  margin: 10px 0;
+  border: 1px solid $blueDark;
+  @include border-radius(12px);
+  display: inline-block;
+  width: 100%;
+  &:after {
+    clear: both;
+  }
   button {
     // LESS button
     &:first-child {
-      @include border-left-radius(18px);
+      @include border-left-radius(10px);
       padding-left: 20px;
       padding-right: 30px;
+      text-align: right;
       .icon-left {
         float: left;
         font-weight: bold;
+        font-size: 1.4em;
       }
     }
     // MORE button
     &:last-child {
-      @include border-right-radius(18px);
+      @include border-right-radius(10px);
       padding-right: 20px;
       padding-left: 30px;
+      text-align: left;
       .icon-right {
         float: right;
         font-weight: bold;
+        font-size: 1.4em;
       }
     }
     // common button style
@@ -40,60 +91,63 @@ body {
     width: 50%;
     float:left;
     margin: 0;
-    border-top: 1px solid rgb(66, 66, 18);
-    border-bottom: 1px solid rgb(25, 37, 9);
-    border-right: 1px solid rgb(25, 37, 9);
-    border-left: 1px solid rgb(25, 37, 9);
-    // button glows
-    // 1. top yellow highlight
-    // 2. inside shading (inset)
-    @include box-shadow(#424212 0 -1px 3px, rgba(0, 0, 0, 0.14) 0 -.4em 8px 5px inset);
-    background-color: rgba(31, 34, 0, 0.94);
-    // text
+    border-top: 1px solid $blueLight;
+    border-bottom: 1px solid $blueDark;
+    border-right: 1px solid $blueDark;
+    border-left: 1px solid $blueDark;
+    @include background-image(linear-gradient($blueLight, $blue 4%, $blue));
+    // button text
     font-size: 1.3em;
     line-height: 1.3em;
-    color: rgb(143, 153, 25);
-    @include text-shadow(#000 0 -1px 2px, rgb(66, 66, 18) 0 1px 1px);
+    color: $blueDarkest;
+    @include text-shadow($blueDark 0 -1px 2px, $blueLight 0 1px 1px);
     &:hover {
-      background-color: rgba(44, 48, 1, 0.94);
-      @include box-shadow(#424212 0 -1px 3px, rgba(0, 0, 0, 0.14) 0 -.4em 8px 5px inset);
+      color: darken($blueDark, 2%);
+      @include background-image(linear-gradient(lighten($blueLight, 2%), lighten($blue, 2%) 4%, lighten($blue, 2%)));
       cursor: pointer;
     }
     &:active {
       padding-top: 16px;
       padding-bottom: 14px;
-      background-color: rgba(44, 48, 1, 0.94);
-      @include box-shadow(#424212 0 -1px 3px, rgba(0, 0, 0, 0.14) 0 .4em 8px 5px inset);
       cursor: pointer;
-      border-top: 1px solid rgb(25, 37, 9);
-      border-bottom: 1px solid rgb(66, 66, 18);
+      border-top: 1px solid $blueDark;
+      color: $blueDarkest;
+      @include background-image(linear-gradient(lighten($blue, 2%) 4%, lighten($blue, 2%)));
     }
     &:disabled {
-      @include opacity(.4);
+      @include opacity(.3);
+      cursor: not-allowed;
     }
   }
 }
 
-
-h1 {
-  font-family: 'Cantarell', sans-serif;
-  font-style: italic;
-  letter-spacing: -0.1em;
-  font-size: 4em;
+.container {
+  width: 80%;
   margin: 0 auto;
-  text-align: center;
-  padding: 20px 0;
-  @include text-shadow(rgb(245, 245, 245) 0 0 1.5em, #E1D772 1px -1px .4em);
 }
 
 #copy {
-  padding: 40px 0 20px;
+  padding: 5px;
+  margin: 40px 0 80px;
   display: inline-block;
   cursor: crosshair;
   background: transparent;
   border: none;
-  color: #fff;
-  font-family: 'Helvetica', arial, serif;
-  font-size: 1.4em;
-  line-height: 1.6em;
+  color: $greyDark;
+  font-size: 1.2em;
+  line-height: 1.8em;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  min-height: 80px;
+  width: 100%;
+  p {
+    font-size: .8em;
+    color: $blueDarkest;
+    text-align: center;
+    a {
+      color: $teal;
+    }
+  }
 }
