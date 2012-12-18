@@ -91,7 +91,8 @@ body:before {
 
 .buttons {
   margin: 10px 0;
-  border: 1px solid $blueDark;
+  padding: 1px;
+  background-color: $blueDark;
   @include border-radius(12px);
   display: inline-block;
   width: 98%;
@@ -140,8 +141,7 @@ body:before {
     color: $blueDarkest;
     @include text-shadow($blueDark 0 -1px 2px, $blueLight 0 1px 1px);
     &:hover {
-      color: darken($blueDark, 2%);
-      @include background-image(linear-gradient(lighten($blueLight, 2%), lighten($blue, 2%) 4%, lighten($blue, 2%)));
+      color: darken($blueDarkest,10);
       cursor: pointer;
     }
     &:active {
@@ -149,7 +149,7 @@ body:before {
       padding-bottom: 14px;
       cursor: pointer;
       border-top: 1px solid $blueDark;
-      color: $blueDarkest;
+      color: darken($blueDarkest,10);
       @include background-image(linear-gradient(lighten($blue, 2%) 4%, lighten($blue, 2%)));
     }
     &:disabled {

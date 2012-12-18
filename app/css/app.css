@@ -95,7 +95,8 @@ body:before {
 /* line 92, ../sass/app.css.scss */
 .buttons {
   margin: 10px 0;
-  border: 1px solid #bfdddc;
+  padding: 1px;
+  background-color: #bfdddc;
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
   -ms-border-radius: 12px;
@@ -104,11 +105,11 @@ body:before {
   display: inline-block;
   width: 98%;
 }
-/* line 98, ../sass/app.css.scss */
+/* line 99, ../sass/app.css.scss */
 .buttons:after {
   clear: both;
 }
-/* line 101, ../sass/app.css.scss */
+/* line 102, ../sass/app.css.scss */
 .buttons button {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -129,7 +130,7 @@ body:before {
   color: #87a09f;
   text-shadow: #bfdddc 0 -1px 2px, white 0 1px 1px;
 }
-/* line 103, ../sass/app.css.scss */
+/* line 104, ../sass/app.css.scss */
 .buttons button:first-child {
   -moz-border-radius-topleft: 10px;
   -webkit-border-top-left-radius: 10px;
@@ -141,13 +142,13 @@ body:before {
   padding-right: 30px;
   text-align: right;
 }
-/* line 108, ../sass/app.css.scss */
+/* line 109, ../sass/app.css.scss */
 .buttons button:first-child .icon-left {
   float: left;
   font-weight: bold;
   font-size: 1.4em;
 }
-/* line 115, ../sass/app.css.scss */
+/* line 116, ../sass/app.css.scss */
 .buttons button:last-child {
   -moz-border-radius-topright: 10px;
   -webkit-border-top-right-radius: 10px;
@@ -159,20 +160,15 @@ body:before {
   padding-left: 30px;
   text-align: left;
 }
-/* line 120, ../sass/app.css.scss */
+/* line 121, ../sass/app.css.scss */
 .buttons button:last-child .icon-right {
   float: right;
   font-weight: bold;
   font-size: 1.4em;
 }
-/* line 142, ../sass/app.css.scss */
+/* line 143, ../sass/app.css.scss */
 .buttons button:hover {
-  color: #b8d9d8;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(4%, #e8f3f3), color-stop(100%, #e8f3f3));
-  background-image: -webkit-linear-gradient(#ffffff, #e8f3f3 4%, #e8f3f3);
-  background-image: -moz-linear-gradient(#ffffff, #e8f3f3 4%, #e8f3f3);
-  background-image: -o-linear-gradient(#ffffff, #e8f3f3 4%, #e8f3f3);
-  background-image: linear-gradient(#ffffff, #e8f3f3 4%, #e8f3f3);
+  color: #6c8887;
   cursor: pointer;
 }
 /* line 147, ../sass/app.css.scss */
@@ -181,7 +177,7 @@ body:before {
   padding-bottom: 14px;
   cursor: pointer;
   border-top: 1px solid #bfdddc;
-  color: #87a09f;
+  color: #6c8887;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(4%, #e8f3f3), color-stop(100%, #e8f3f3));
   background-image: -webkit-linear-gradient(#e8f3f3 4%, #e8f3f3);
   background-image: -moz-linear-gradient(#e8f3f3 4%, #e8f3f3);
