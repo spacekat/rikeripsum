@@ -5,7 +5,7 @@ function IpsumCtrl($scope, $http) {
   $scope.quoteCount = 1;
   $scope.ipsum = ""
   $scope.getIpsum = function() {
-    $http.get("/app/ipsum/words.txt").success(function(data) {
+    $http.get("/ipsum/words.txt").success(function(data) {
       $scope.ipsum = shuffle(data.split("\n"));
     })
   }

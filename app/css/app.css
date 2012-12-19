@@ -87,7 +87,7 @@ body:before {
   /* overrides color with nothingness */
   -webkit-text-fill-color: transparent;
   /* remember non WebKit browsers will see all of this EXCEPT the text */
-  background: black url(/app/img/space-tile.jpg) repeat top center;
+  background: black url(/img/space-tile.jpg) repeat top center;
   /* the magic */
   -webkit-background-clip: text;
 }
