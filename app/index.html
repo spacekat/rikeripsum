@@ -1,34 +1,32 @@
-<!doctype html>
-<html lang="en" ng-app="myApp">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <title>Riker Ipsum</title>
-  <link rel="stylesheet" href="css/app.css"/>
+  <link rel="stylesheet" href="css/app.css">
   <link rel="icon" type="image/png" href="img/favicon.png">
 </head>
-<body>
-
-<div id="wrap">
-  <div id="main">
-    <div ng-view></div>
+<body ng-app="myApp">
+  <div id="wrap">
+    <div id="main" ng-view>
+    </div>
   </div>
-</div>
-<div id="footer">
-  <p class="credits">Made by <a href="https://twitter.com/jessicaspacekat">@jessicaspacekat</a> with love for <a href="http://en.wikipedia.org/wiki/William_Riker">Number One</a>.</p>
-  <p>Galaxy background <a href="http://hubblesite.org/gallery/album/entire/pr2012010c/">Galaxy Cluster Abel</a> from the Hubble telescope.
-  <br>Image credit: NASA, ESA, CFHT, CXO, M.J. Jee (University of California, Davis), and A. Mahdavi (San Francisco State University)
-  </p>
-</div>
+  <div id="footer">
+    <p>
+      Made by <a href="https://twitter.com/jessicaspacekat">@jessicaspacekat</a> with love for <a href="http://en.wikipedia.org/wiki/William_Riker">Number One</a>.
+    </p>
+    <p>
+      Galaxy background <a href="http://hubblesite.org/gallery/album/entire/pr2012010c/">Galaxy Cluster Abel</a> from the Hubble telescope.
+    </p>
+    <p>
+      Image credit: <abbr title="National Aeronautics and Space Administration"><a href="http://www.nasa.gov/">NASA</a></abbr>, <abbr title="European Space Agency"><a href="http://www.esa.int">ESA</a></abbr>, <abbr title="Canada France Hawaii Telescope"><a href="http://www.cfht.hawaii.edu/">CFHT</a></abbr>, <abbr title="Chandra X-ray Observatory"><a href="http://chandra.harvard.edu/">CXO</a></abbr>, M.J. Jee (University of California, Davis), and A. Mahdavi (San Francisco State University).
+    </p>
+  </div>
 
-  <!-- In production use:
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.min.js"></script>
-  -->
-  <script src="lib/angular/angular.js"></script>
+  <script src="lib/angular.min.js"></script>
   <script src="js/app.js"></script>
-  <script src="js/services.js"></script>
   <script src="js/controllers.js"></script>
   <script src="js/filters.js"></script>
-  <script src="js/directives.js"></script>
   <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-37398646-1']);
