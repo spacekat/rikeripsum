@@ -1,6 +1,6 @@
 # Riker Ipsum
 
-http://rikeripsum.herokuapp.com/
+http://www.rikeripsum.com/
 
 _An [AngularJS seed](https://github.com/angular/angular-seed) just for funsies project._
 
